@@ -27,18 +27,18 @@ function App() {
         <h3>Шимбә, 8 июнь 2024</h3>
         <div className='timetable'>
           <div className='pointWrapper'>
-            <img className='img' src="/mark.svg" alt="Сбор гостей" />
+            <img className='img' src="./mark.svg" alt="Сбор гостей" />
             <div className='text'>
               <span className='time'>12:30</span>
               <p className='title'>Кунаклар җыю</p>
-              <p className='description'>Безгә елмаю бирегез hәм яхшы кәеф алып киләгез</p>
+              <p className='description'>Безгә елмаю бирегез һәм яхшы кәеф алып киләгез</p>
             </div>
           </div>
           <div className='pointWrapper'>
             <div className='line'></div>
           </div>
           <div className='pointWrapper'>
-            <img className='img' src="/moon.svg" alt="Никах" />
+            <img className='img' src="./moon.svg" alt="Никах" />
             <div className='text'>
               <span className='time'>13:00</span>
               <p className='title'>Никах тантанасы</p>
@@ -49,11 +49,11 @@ function App() {
             <div className='line'></div>
           </div>
           <div className='pointWrapper'>
-            <img className='img' src="/banquet.svg" alt="Банкет" />
+            <img className='img' src="./banquet.svg" alt="Банкет" />
             <div className='text'>
               <span className='time'>15:00</span>
               <p className='title'>Мәҗлес</p>
-              <p className='description'>Тәмле ризык, бию hәм күңел ачу өчен иң яхшы вакыт</p>
+              <p className='description'>Тәмле ризык, бию һәм күңел ачу өчен иң яхшы вакыт</p>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ function App() {
         <div className='map'>
         <h3>Ак мәчет, Болгар</h3>
         <div className='imgWrapper'>
-          <img className='imgLoc' src='/akmechet.jpeg' alt='Белая мечеть'/>
+          <img className='imgLoc' src='./akmechet.jpeg' alt='Белая мечеть'/>
         </div>
         <p className='locText'>
           Наша церемония пройдет в Белой мечети по адресу: ул. Кул Гали, 1, Болгар.
@@ -80,7 +80,7 @@ function App() {
           Наш банкет пройдет в ресторане Kol Gali Resort&SPA по адресу: ул. Прибрежная, 1, посёлок Приволжский.
         </p>
         <div className='imgWrapper'>
-          <img className='imgLoc' src='/rest.webp' alt='Ресторан'/>
+          <img className='imgLoc' src='./rest.webp' alt='Ресторан'/>
         </div>
           <YMaps>
             <Map defaultState={defaultStateSec}>
@@ -93,7 +93,7 @@ function App() {
     <footer className='footer'>
       <h2>Без сезне көтеп калабыз!</h2>
       <div className='imgWrapper'>
-        <img className='imgLoc' src='/couple.jpg' alt='Мы будем вас ждать'/>
+        <img className='imgLoc' src='./couple.jpg' alt='Мы будем вас ждать'/>
       </div>
     </footer>
   </>
