@@ -4,17 +4,8 @@
       url(/fonts/Arabic.woff) format("woff");
 }
 
-@font-face {
-  font-family: "Indico";
-  src: url(/fonts/Indico.woff2) format("woff2"),
-      url(/fonts/Indico.woff) format("woff");
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 :root {
-  /* font-family: "Bebas Neue", sans-serif; */
-  font-family: "Indico", sans-serif;
+  font-family: sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -69,11 +60,11 @@ section {
   }
   
   h2 {
-    font-size: 2.2em;
+    font-size: 2.4em;
   }
   
   h3 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
   p {
     font-size: 0.6em;

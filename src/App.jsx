@@ -62,12 +62,12 @@ function App() {
         <h2>Урынлашу</h2>
         <div className='map'>
         <h3>Ак мәчет, Болгар</h3>
+        <p className='locText'>
+        Безнең тантана Ак мәчеттә Көл Гали урамы, 1, Болгар адресы буенча узачак.
+        </p>
         <div className='imgWrapper'>
           <img className='imgLoc' src='./akmechet.jpeg' alt='Белая мечеть'/>
         </div>
-        <p className='locText'>
-          Наша церемония пройдет в Белой мечети по адресу: ул. Кул Гали, 1, Болгар.
-        </p>
           <YMaps>
             <Map defaultState={defaultState}>
               <Placemark geometry={[54.976473, 49.035627]} />
@@ -77,7 +77,7 @@ function App() {
         <div className='map'>
         <h3>Kol Gali Resort&SPA</h3>
         <p className='locText'>
-          Наш банкет пройдет в ресторане Kol Gali Resort&SPA по адресу: ул. Прибрежная, 1, посёлок Приволжский.
+          Безнең мәҗлес Kol Gali Resort&SPA ресторанында узачак: Прибрежная урамы, 1, Волга буе Бистәсе.
         </p>
         <div className='imgWrapper'>
           <img className='imgLoc' src='./rest.webp' alt='Ресторан'/>
