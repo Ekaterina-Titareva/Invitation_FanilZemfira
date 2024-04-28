@@ -1,90 +1,100 @@
 import './App.css'
-// import Countdown from 'react-countdown'
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 function App() {
-
+  const defaultState = {
+    center: [54.976473, 49.035627],
+    zoom: 13,
+  };
+  const defaultStateSec = {
+    center: [54.990303, 49.087953],
+    zoom: 14,
+  };
+  
   return (
     <>
     <header className='header'>
-      <h1>Фаниль и Земфира</h1>
+      <h1>Фэнил hэм Земфира</h1>
       <h2>08.06.2024</h2>
-      <h3>Дорогие родные и близкие!</h3>
-      <h3>Приглашаем вас на нашу свадьбу!</h3>
+      <h3>Хормэтле туганнар hэм якыннар!
+        <br />Сезне никах-туебызнын кадерле кунагы булырга чакырабыз!
+      </h3>
     </header>
     <main>
       <section id='timetable'>
-        <div className='imageWrapper'>
-          <img src="/timetable.svg" alt="Программа дня" />
-        </div>
+          <h2>Көн программасы</h2>
         {/* <Countdown date={Date.now() + (new Date("2024-06-08")-Date.now())} /> */}
-        <h2>Суббота, 8 июня 2024</h2>
+        <h3>Шимбә, 8 июнь 2024</h3>
         <div className='timetable'>
           <div className='pointWrapper'>
-            <span className='time'>12:00</span>
             <img className='img' src="/mark.svg" alt="Сбор гостей" />
-              <p className='title'>Сбор гостей</p>
+            <div className='text'>
+              <span className='time'>12:30</span>
+              <p className='title'>Кунаклар җыю</p>
+              <p className='description'>Безгә елмаю бирегез hәм яхшы кәеф алып киләгез</p>
+            </div>
           </div>
           <div className='pointWrapper'>
-            <div></div>
             <div className='line'></div>
-            <p className='description'>Подарите нам свою улыбку и возьмите с собой хорошее настроение</p>
           </div>
           <div className='pointWrapper'>
-            <span className='time'>14:00</span>
-            <img className='img' src="/ceremony.svg" alt="Церемония" />
-              <p className='title'>Церемония</p>
+            <img className='img' src="/moon.svg" alt="Никах" />
+            <div className='text'>
+              <span className='time'>13:00</span>
+              <p className='title'>Никах тантанасы</p>
+              <p className='description'>Күңеллегез тулып китсә, еларга рөхсәт ителә</p>
+            </div>
           </div>
           <div className='pointWrapper'>
-            <div></div>
             <div className='line'></div>
-            <p className='description'>Может быть трогательно, разрешается всплакнуть</p>
           </div>
           <div className='pointWrapper'>
-            <span className='time'>17:00</span>
             <img className='img' src="/banquet.svg" alt="Банкет" />
-              <p className='title'>Банкет</p>
-          </div>
-          <div className='pointWrapper'>
-            <div></div>
-            <div className='line'></div>
-            <p className='description'>Самое время для вкусной еды, танцев и развлечений</p>
-          </div>
-          <div className='pointWrapper'>
-            <span className='time'>23:00</span>
-            <img className='img' src="/end.svg" alt="Завершение торжества" />
-              <p className='title'>Завершение торжества</p>
-          </div>
-          <div className='pointWrapper'>
-            <div></div>
-            <div></div>
-            <p className='description'>Надеемся, этот вечер вам понравится</p>
+            <div className='text'>
+              <span className='time'>15:00</span>
+              <p className='title'>Мәҗлес</p>
+              <p className='description'>Тәмле ризык, бию hәм күңел ачу өчен иң яхшы вакыт</p>
+            </div>
           </div>
         </div>
       </section>
       <section>
-        <div className='imageWrapper'>
-          <img src="/location.svg" alt="Локация" />
+        <h2>Урынлашу</h2>
+        <div className='map'>
+        <h3>Ак мәчет, Болгар</h3>
+        <div className='imgWrapper'>
+          <img className='imgLoc' src='/akmechet.jpeg' alt='Белая мечеть'/>
         </div>
-      </section>
-      <section>
-        <div className='imageWrapper'>
-          <img src="/dresscode.svg" alt="Дресс-код" />
-          <div className='colors'>
-            <div className='color light'></div>
-            <div className='color main'></div>
-            <div className='color dark'></div>
-            <div className='color male'></div>
-          </div>
+        <p className='locText'>
+          Наша церемония пройдет в Белой мечети по адресу: ул. Кул Гали, 1, Болгар.
+        </p>
+          <YMaps>
+            <Map defaultState={defaultState}>
+              <Placemark geometry={[54.976473, 49.035627]} />
+            </Map>
+          </YMaps>
         </div>
-      </section>
-      <section>
-        <div className='imageWrapper'>
-          <img src="/waiting.svg" alt="Будем вас ждать" />
+        <div className='map'>
+        <h3>Kol Gali Resort&SPA</h3>
+        <p className='locText'>
+          Наш банкет пройдет в ресторане Kol Gali Resort&SPA по адресу: ул. Прибрежная, 1, посёлок Приволжский.
+        </p>
+        <div className='imgWrapper'>
+          <img className='imgLoc' src='/rest.webp' alt='Ресторан'/>
+        </div>
+          <YMaps>
+            <Map defaultState={defaultStateSec}>
+              <Placemark geometry={[54.990303, 49.087953]} />
+            </Map>
+          </YMaps>
         </div>
       </section>
     </main>
     <footer className='footer'>
-
+      <h2>Без сезне көтеп калабыз!</h2>
+      <div className='imgWrapper'>
+        <img className='imgLoc' src='/couple.jpg' alt='Мы будем вас ждать'/>
+      </div>
     </footer>
   </>
   )
