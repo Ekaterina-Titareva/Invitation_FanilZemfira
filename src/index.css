@@ -3,6 +3,11 @@
   src: url(/fonts/Arabic.woff2) format("woff2"),
       url(/fonts/Arabic.woff) format("woff");
 }
+@font-face {
+  font-family: "Indico";
+  src: url(/fonts/Indico.woff2) format("woff2"),
+      url(/fonts/Indico.woff) format("woff");
+}
 
 :root {
   font-family: sans-serif;
@@ -28,13 +33,14 @@ h1 {
   margin: 0;
   padding: 50px 0;
   text-align: center;
+  filter: drop-shadow(4px 4px 4px black);
 }
 
 h2 {
   font-size: 3.2em;
   line-height: 1;
   margin: 0;
-  padding: 40px;
+  padding: 25px;
   text-align: center;
 }
 
@@ -57,14 +63,6 @@ section {
   
   h1 {
     font-size: 5.2em;
-  }
-  
-  h2 {
-    font-size: 2.4em;
-  }
-  
-  h3 {
-    font-size: 2.2em;
   }
   p {
     font-size: 0.6em;
