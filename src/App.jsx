@@ -3,7 +3,7 @@ import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 function App() {
   const defaultState = {
-    center: [54.977715, 49.0340],
+    center: [54.965912, 49.061215],
     zoom: 14,
   };
   const defaultStateSec = {
@@ -69,7 +69,7 @@ function App() {
           <div className='mapWrapper'>
             <YMaps className='mapWrapper'>
               <Map defaultState={defaultState}>
-                <Placemark geometry={[54.977715, 49.0340]} />
+                <Placemark geometry={[54.965912, 49.061215]} />
               </Map>
             </YMaps>
           </div>
