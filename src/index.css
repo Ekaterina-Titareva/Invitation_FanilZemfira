@@ -3,14 +3,16 @@
   src: url(/fonts/Arabic.woff2) format("woff2"),
       url(/fonts/Arabic.woff) format("woff");
 }
+
 @font-face {
-  font-family: "Indico";
-  src: url(/fonts/Indico.woff2) format("woff2"),
-      url(/fonts/Indico.woff) format("woff");
+  font-family: "AdventPro";
+  src: url(/fonts/AdventPro.woff2) format("woff2"),
+      url(/fonts/AdventPro.woff) format("woff");
 }
 
+
 :root {
-  font-family: sans-serif;
+  font-family: "AdventPro", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;

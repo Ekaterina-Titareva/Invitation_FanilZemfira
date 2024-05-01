@@ -53,12 +53,15 @@
 
 .time {
   text-align: start;
-  font-family: "Indico", sans-serif;
+  font-family: Arabic, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  text-decoration: underline;
 }
 
 .secondTitle {
-  font-family: "Indico", sans-serif;
   font-size: 1.5em;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.634));
 }
 
 .img {
@@ -96,6 +99,7 @@
   align-items: center;
   margin-bottom: 50px;
   gap: 10px;
+  font-weight: 400;
 }
 
 .mapWrapper {

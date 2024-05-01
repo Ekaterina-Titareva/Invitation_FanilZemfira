@@ -3,8 +3,8 @@ import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 function App() {
   const defaultState = {
-    center: [54.976473, 49.035627],
-    zoom: 13,
+    center: [54.977715, 49.0340],
+    zoom: 14,
   };
   const defaultStateSec = {
     center: [54.990303, 49.087953],
@@ -40,7 +40,7 @@ function App() {
             <div className='text'>
               <span className='time'>13:00</span>
               <p className='title'>Никах тантанасы</p>
-              <p className='description'>Күңеллегез тулып китсә, еларга рөхсәт ителә</p>
+              <p className='description'>Күңелегез тулып китсә, еларга рөхсәт ителә</p>
             </div>
           </div>
           <div className='pointWrapper'>
@@ -69,7 +69,7 @@ function App() {
           <div className='mapWrapper'>
             <YMaps className='mapWrapper'>
               <Map defaultState={defaultState}>
-                <Placemark geometry={[54.976473, 49.035627]} />
+                <Placemark geometry={[54.977715, 49.0340]} />
               </Map>
             </YMaps>
           </div>
@@ -94,9 +94,6 @@ function App() {
     </main>
     <footer className='footer'>
       <h2 className='blockTitle'>Без сезне котеп калабыз!</h2>
-      {/* <div className='imgWrapper'>
-        <img className='imgLoc' src='./footer.jpg' alt='Мы будем вас ждать'/>
-      </div> */}
     </footer>
   </>
   )
